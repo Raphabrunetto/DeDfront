@@ -10,6 +10,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+// é um BroadcastReceiver que responde a eventos de exclusão de personagens.
+
 class CharacterDeleteReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {

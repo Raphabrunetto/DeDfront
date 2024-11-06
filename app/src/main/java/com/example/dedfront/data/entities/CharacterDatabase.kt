@@ -6,6 +6,8 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
+//é a classe que gerencia o banco de dados. Ela define como o banco é configurado e acessado.
+
 @Database(entities = [CharacterEntity::class], version = 1)
 abstract class CharacterDatabase : RoomDatabase() {
     abstract fun characterDao(): CharacterDao

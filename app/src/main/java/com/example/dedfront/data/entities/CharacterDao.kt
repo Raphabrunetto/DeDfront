@@ -6,6 +6,10 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
+
+//os DAOs são interfaces que utilizam a biblioteca Room para mapear consultas SQL para métodos Kotlin
+//ela fornece métodos para acessar o banco de dados.
+
 @Dao
 interface CharacterDao {
 

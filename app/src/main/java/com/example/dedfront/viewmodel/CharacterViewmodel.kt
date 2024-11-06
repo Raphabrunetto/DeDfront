@@ -17,6 +17,10 @@ import com.example.dedfront.data.entities.CharacterEntity
 import com.example.dedfront.CharacterDeleteReceiver
 import kotlinx.coroutines.launch
 
+//projetada para gerenciar e fornecer dados relacionados aos personagens na interface do usuário
+// Ela coordena a interação entre a interface e o banco de dados
+// processando as operações de dados e enviando notificações quando necessário.
+
 class CharacterViewModel(private val characterDao: CharacterDao) : ViewModel() {
 
     // LiveData para observar a lista de personagens
@@ -42,7 +46,7 @@ class CharacterViewModel(private val characterDao: CharacterDao) : ViewModel() {
     }
 
 
-    // Método para obter um personagem por ID
+    // Metodo para obter um personagem por ID
     fun getCharacterById(characterId: Int) {
         viewModelScope.launch {
             try {
@@ -54,7 +58,7 @@ class CharacterViewModel(private val characterDao: CharacterDao) : ViewModel() {
         }
     }
 
-    // Método para deletar um personagem por ID
+    // Metodo para deletar um personagem por ID
     fun deleteCharacter(characterId: Int) {
         viewModelScope.launch {
             try {
@@ -65,7 +69,7 @@ class CharacterViewModel(private val characterDao: CharacterDao) : ViewModel() {
         }
     }
 
-    // Método para deletar todos os personagens
+    // Metodo para deletar todos os personagens
     fun deleteAllCharacters() {
         viewModelScope.launch {
             try {
@@ -130,7 +134,4 @@ class CharacterViewModel(private val characterDao: CharacterDao) : ViewModel() {
             Log.e("NotificationDebug", "Falha ao obter NotificationManager.")
         }
     }
-
-
-
 }

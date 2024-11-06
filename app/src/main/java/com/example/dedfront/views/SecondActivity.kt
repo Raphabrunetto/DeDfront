@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.dedfront.R
 import org.example.races.Undead
 
+//tela onde o usuário pode distribuir pontos entre os atributos de um personagem.
+
 class SecondActivity : AppCompatActivity() {
 
     private var forca = 8

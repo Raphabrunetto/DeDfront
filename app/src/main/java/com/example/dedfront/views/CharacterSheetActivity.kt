@@ -14,6 +14,11 @@ import com.example.dedfront.viewmodel.CharacterViewModelFactory
 import org.example.character.Attributes
 import org.example.utils.Calculator
 
+//A CharacterSheetActivity é responsável por exibir as informações detalhadas de um personagem,
+// realizar a inserção inicial no banco de dados (caso o personagem ainda não exista)
+// e gerenciar a exclusão de personagens.
+//utiliza o Calculator para aplicar lógica de jogo, como a determinação de modificadores e pontos de vida.
+
 class CharacterSheetActivity : AppCompatActivity() {
 
     private val characterViewModel: CharacterViewModel by viewModels {

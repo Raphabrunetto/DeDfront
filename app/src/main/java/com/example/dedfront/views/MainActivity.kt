@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.dedfront.R
 class MainActivity : AppCompatActivity() {
 
+
+    //é a tela inicial do aplicativo, um ponto de entrada para navegar para outras telas.
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

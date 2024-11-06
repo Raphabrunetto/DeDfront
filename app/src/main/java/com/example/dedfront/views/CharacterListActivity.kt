@@ -12,6 +12,10 @@ import com.example.dedfront.data.entities.CharacterDatabase
 import com.example.dedfront.viewmodel.CharacterViewModel
 import com.example.dedfront.viewmodel.CharacterViewModelFactory
 
+//exibe uma lista de personagens criados em uma RecyclerView
+//permite ao usuário deletar todos os personagens com um botão
+//utiliza ViewModel e LiveData para gerenciar dados
+
 class CharacterListActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView

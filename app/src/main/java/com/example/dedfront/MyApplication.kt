@@ -8,10 +8,15 @@ import android.os.Build
 import androidx.room.Room
 import com.example.dedfront.data.entities.CharacterDatabase
 
+//extensão da classe Application
+//objetivo de configurar alguns recursos globais e necessários para o funcionamento da aplicação
+//inicia junto com o app
+
 class MyApplication : Application() {
     lateinit var database: CharacterDatabase
         private set
 
+//inicializa a instancia do banco usando Room
     override fun onCreate() {
         super.onCreate()
 
@@ -25,6 +30,7 @@ class MyApplication : Application() {
         createNotificationChannel()
     }
 
+//configurar um canal de notificações
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = "Character Creation"

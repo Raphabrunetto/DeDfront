@@ -16,6 +16,8 @@ import com.example.dedfront.views.CharacterSheetActivity
 class CharacterAdapter(private val context: Context, private val characters: List<CharacterEntity>) :
     RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
 
+        //serve para associar cada item da lista ao layout que vai ser exibido na tela.
+
     class CharacterViewHolder(itemView: View, private val context: Context) : RecyclerView.ViewHolder(itemView) {
         private val buttonCharacter: Button = itemView.findViewById(R.id.buttonCharacter)
 

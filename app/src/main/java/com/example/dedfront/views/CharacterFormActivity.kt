@@ -9,6 +9,8 @@ import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dedfront.R
 
+//Activity que apresenta o formulário de criação de personagem
+
 class CharacterFormActivity : AppCompatActivity() {
 
     private lateinit var etCharacterName: EditText
